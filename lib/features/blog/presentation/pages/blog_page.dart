@@ -3,6 +3,7 @@ import 'package:aplikasi_blog/core/utils/show_snackbar.dart';
 import 'package:aplikasi_blog/features/blog/presentation/bloc/blog_bloc.dart';
 import 'package:aplikasi_blog/features/blog/presentation/pages/add_new_blog_page.dart';
 import 'package:aplikasi_blog/features/blog/presentation/widgets/blog_card.dart';
+import 'package:aplikasi_blog/features/profile/presentation/pages/profile_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -39,10 +40,10 @@ class _BlogPageState extends State<BlogPage> {
             padding: const EdgeInsets.only(right: 8.0),
             child: IconButton(
               onPressed: () {
-                Navigator.push(context, AddNewBlogPage.route());
+                Navigator.push(context, ProfilePage.route());
               },
               icon: const Icon(
-                CupertinoIcons.add_circled,
+                CupertinoIcons.person_circle,
                 size: 30,
               ),
             ),
